@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function splitString(str, n)
+    {
+        let str_long = str.length;
+        let c;
+        c = parseInt(str_long / n, 10);
+ 
+        for (let i = 0; i< str_long; i++)
+        {
+            if(i % c == 0)
+                document.write("</br>");
+                document.write(str[i]);
+        }
+    }
+    let str = "elephants";
+    splitString(str, 3);
+     
+</script>
+</body>
+</html>

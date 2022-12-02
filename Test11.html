@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hover Me!</title>
+</head>
+
+<body>
+    <div id="hover-me" style="background-color: yellow;">
+        Ogni volta che passerai il mouse sopra di me, un asterisco apparirà in console!
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            var select = $("#hover-me")
+            $(select).on('mouseover', function () {
+                console.log('The option with value ' + $(this).val());
+            });
+        });
+    </script>
+</body>
+
+</html>
